@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Herbal Hair Oil - Roote Botanics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>✨ Free shipping on orders over $50 | Use code ROOTS15 for 15% off your first order</p>
+        <button class="close-announcement">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="products.html" class="nav-link active">Shop</a>
+                <a href="about.html" class="nav-link">Ingredients</a>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Roote Botanics</h1>
+                </a>
+            </div>
+            <div class="nav-right">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#" class="nav-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="nav-icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="products.html">Shop</a>
+            <a href="about.html">Ingredients</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="product-detail-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80" alt="Roote Botanics Natural Herbal Hair Oil - 100ml Frosted Glass Bottle" id="mainImage">
+                </div>
+                <div class="thumbnail-images">
+                    <div class="thumbnail active" onclick="changeImage(this, 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=200&q=80" alt="Natural oil bottle">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1556760544-74068565f05c?w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?w=200&q=80" alt="Organic serum aesthetic">
+                    </div>
+                    <div class="thumbnail" onclick="changeImage(this, 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80')">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=200&q=80" alt="Natural herbs and botanicals">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info-detail">
+                <span class="product-badge">100ml / 3.4 fl oz</span>
+                <h1>Natural Herbal Hair Oil</h1>
+                <p class="product-subtitle">Frosted White Glass Bottle</p>
+                
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-text">4.8 (127 reviews)</span>
+                </div>
+
+                <div class="product-price-detail">
+                    <span class="price">$42.00</span>
+                    <span class="price-note">Free shipping over $50</span>
+                </div>
+
+                <div class="product-description-detail">
+                    <p>Experience the power of ancient botanical wisdom with our signature Natural Herbal Hair Oil. Handcrafted in small batches, each 100ml frosted white glass bottle contains a potent blend of traditional herbs carefully selected to nourish, strengthen, and transform your hair.</p>
+                </div>
+
+                <div class="product-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% Natural</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-ban"></i>
+                        <span>No Chemicals</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-recycle"></i>
+                        <span>Eco-Friendly</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Cruelty Free</span>
+                    </div>
+                </div>
+
+                <div class="quantity-selector">
+                    <label>Quantity</label>
+                    <div class="quantity-controls">
+                        <button class="qty-btn" onclick="decreaseQty()">-</button>
+                        <input type="number" value="1" min="1" max="10" id="quantity">
+                        <button class="qty-btn" onclick="increaseQty()">+</button>
+                    </div>
+                </div>
+
+                <div class="add-to-cart-section">
+                    <button class="btn btn-primary btn-large add-to-cart">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart - $42.00
+                    </button>
+                </div>
+
+                <div class="product-meta">
+                    <p><strong>SKU:</strong> RB-HO-100</p>
+                    <p><strong>Category:</strong> Hair Oil</p>
+                    <p><strong>Tags:</strong> Natural, Herbal, Hair Growth, Ayurvedic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs-section">
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" onclick="openTab(event, 'description')">Description</button>
+                <button class="tab-btn" onclick="openTab(event, 'ingredients')">Ingredients</button>
+                <button class="tab-btn" onclick="openTab(event, 'howto')">How to Use</button>
+                <button class="tab-btn" onclick="openTab(event, 'shipping')">Shipping</button>
+            </div>
+
+            <div id="description" class="tab-content active">
+                <h3>About This Oil</h3>
+                <p>Our Natural Herbal Hair Oil is a labor of love, crafted using traditional recipes passed down through generations. Each bottle contains a carefully balanced blend of herbs infused in nourishing carrier oils to deliver maximum benefits to your hair and scalp.</p>
+                <p>The beautiful frosted white glass bottle isn't just for aesthetics—it protects the precious oils from light degradation, ensuring that every drop retains its potency from the first use to the last.</p>
+                
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Promotes healthy hair growth</li>
+                    <li>Strengthens hair from root to tip</li>
+                    <li>Reduces hair fall and breakage</li>
+                    <li>Nourishes dry, damaged hair</li>
+                    <li>Adds natural shine and softness</li>
+                    <li>Soothes and balances the scalp</li>
+                    <li>Prevents premature graying</li>
+                </ul>
+            </div>
+
+            <div id="ingredients" class="tab-content">
+                <h3>Natural Herbal Ingredients</h3>
+                <p>Every ingredient in our formula is 100% natural and serves a specific purpose for your hair health:</p>
+                
+                <div class="ingredients-list">
+                    <div class="ingredient-item">
+                        <h4>Bhringraj (Eclipta Alba)</h4>
+                        <p>Known as the "King of Herbs" for hair care, Bhringraj promotes hair growth, prevents hair loss, and helps maintain natural hair color.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h4>Amla (Indian Gooseberry)</h4>
+                        <p>Rich in Vitamin C and antioxidants, Amla strengthens hair follicles, promotes growth, and adds brilliant shine.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h4>Brahmi (Bacopa Monnieri)</h4>
+                        <p>Deeply nourishes the scalp, reduces split ends, and promotes thicker, healthier hair growth.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h4>Rosemary</h4>
+                        <p>Stimulates blood circulation to the scalp, encouraging healthy hair growth and reducing dandruff.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h4>Coconut Oil Base</h4>
+                        <p>A nourishing carrier oil that deeply penetrates the hair shaft, providing moisture and protection.</p>
+                    </div>
+                    <div class="ingredient-item">
+                        <h4>Sesame Oil</h4>
+                        <p>Rich in vitamins and minerals, it nourishes the scalp and helps seal in moisture.</p>
+                    </div>
+                </div>
+
+                <p class="ingredients-note"><strong>Free from:</strong> Parabens, Sulfates, Silicones, Mineral Oil, Artificial Fragrances, and Synthetic Colors.</p>
+            </div>
+
+            <div id="howto" class="tab-content">
+                <h3>How to Use</h3>
+                
+                <div class="usage-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h4>Warm the Oil</h4>
+                            <p>Pour a small amount (about a tablespoon) into your palm or a small bowl. Gently warm it by rubbing between your palms or placing the bowl in warm water.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h4>Apply to Scalp</h4>
+                            <p>Part your hair into sections and apply the oil directly to your scalp. Use your fingertips to gently massage in circular motions for 5-10 minutes.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h4>Work Through Hair</h4>
+                            <p>Apply any remaining oil to the length of your hair, paying special attention to dry ends.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <h4>Let it Absorb</h4>
+                            <p>Leave the oil on for at least 1 hour, or overnight for deep conditioning. Cover with a shower cap if desired.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <div class="step-content">
+                            <h4>Wash & Enjoy</h4>
+                            <p>Wash with a gentle shampoo. You may need to shampoo twice to remove all the oil. Enjoy your soft, nourished hair!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="usage-note"><strong>Recommended:</strong> Use 2-3 times per week for best results. Consistent use for 4-8 weeks will show visible improvements in hair health and growth.</p>
+            </div>
+
+            <div id="shipping" class="tab-content">
+                <h3>Shipping & Returns</h3>
+                
+                <h4>Shipping</h4>
+                <ul>
+                    <li><strong>Free Standard Shipping:</strong> On orders over $50 (5-7 business days)</li>
+                    <li><strong>Standard Shipping:</strong> $5.99 (5-7 business days)</li>
+                    <li><strong>Express Shipping:</strong> $12.99 (2-3 business days)</li>
+                </ul>
+                <p>All orders are carefully packaged to ensure your product arrives safely. Each bottle is wrapped in protective materials and shipped in eco-friendly packaging.</p>
+
+                <h4>Returns & Refunds</h4>
+                <p>We offer a 30-day satisfaction guarantee. If you're not completely happy with your purchase, contact us for a full refund or exchange. Product must be at least 75% full to qualify for returns.</p>
+
+                <h4>International Shipping</h4>
+                <p>Currently, we ship within the United States only. International shipping coming soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="section-header centered">
+            <span class="section-label">Customer Love</span>
+            <h3>What People Are Saying</h3>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"I've tried so many hair oils, but this one is truly different. My hair feels stronger and has so much more shine after just 3 weeks of use!"</p>
+                <div class="reviewer">
+                    <strong>Sarah M.</strong>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"The frosted glass bottle is so beautiful, and the oil smells amazing—like being in a spa! My scalp feels so much healthier."</p>
+                <div class="reviewer">
+                    <strong>Priya K.</strong>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="review-text">"Finally, a natural product that actually works! My hair fall has reduced significantly. Will definitely repurchase."</p>
+                <div class="reviewer">
+                    <strong>Jessica L.</strong>
+                    <span>Verified Buyer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <a href="products.html">Natural Herbal Hair Oil</a>
+                <a href="products.html">100ml Bottle - $42</a>
+            </div>
+            <div class="footer-column">
+                <h4>Info</h4>
+                <a href="about.html">About Us</a>
+                <a href="about.html">Our Ingredients</a>
+                <a href="contact.html">FAQs</a>
+                <a href="contact.html">Shipping & Returns</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h4>Get In Touch</h4>
+                <p>Questions about our oil?<br>We're here to help.</p>
+                <p>Mon - Fri: 9am - 6pm EST</p>
+            </div>
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="footer-email">hello@rootebotanics.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Roote Botanics. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Image Gallery
+        function changeImage(thumbnail, src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+            thumbnail.classList.add('active');
+        }
+
+        // Quantity Controls
+        function increaseQty() {
+            const input = document.getElementById('quantity');
+            if (input.value < 10) input.value = parseInt(input.value) + 1;
+            updateCartButton();
+        }
+
+        function decreaseQty() {
+            const input = document.getElementById('quantity');
+            if (input.value > 1) input.value = parseInt(input.value) - 1;
+            updateCartButton();
+        }
+
+        function updateCartButton() {
+            const qty = document.getElementById('quantity').value;
+            const total = (42 * qty).toFixed(2);
+            document.querySelector('.add-to-cart').innerHTML = `<i class="fas fa-shopping-bag"></i> Add to Cart - $${total}`;
+        }
+
+        // Tabs
+        function openTab(evt, tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Add to Cart
+        document.querySelector('.add-to-cart').addEventListener('click', function() {
+            const qty = document.getElementById('quantity').value;
+            updateCartCount(parseInt(qty));
+            showNotification(`${qty} item(s) added to cart!`);
+        });
+    </script>
+</body>
+</html>
