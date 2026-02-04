@@ -238,6 +238,77 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--cream-color);
 }
 
+/* Full Width Hero Variant */
+.hero.hero-fullwidth {
+    display: block;
+    position: relative;
+    min-height: 100vh;
+    grid-template-columns: none;
+}
+
+.hero-fullwidth .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-fullwidth .hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-fullwidth .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(45, 74, 62, 0.7) 0%, rgba(45, 74, 62, 0.3) 50%, transparent 100%);
+    z-index: 2;
+}
+
+.hero-fullwidth .hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 80px 100px;
+    max-width: 700px;
+}
+
+.hero-fullwidth .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-fullwidth .hero-title {
+    color: var(--white);
+    font-size: 64px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-fullwidth .hero-description {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.hero-fullwidth .btn-primary {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.hero-fullwidth .btn-primary:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -857,6 +928,26 @@ h1, h2, h3, h4, h5, h6 {
         height: 400px;
     }
     
+    /* Full Width Hero Responsive */
+    .hero-fullwidth .hero-content {
+        padding: 60px 40px;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero-fullwidth .hero-title {
+        font-size: 42px;
+    }
+    
+    .hero-fullwidth .hero-description {
+        font-size: 16px;
+    }
+    
+    .hero-fullwidth .hero-overlay {
+        background: linear-gradient(180deg, rgba(45, 74, 62, 0.7) 0%, rgba(45, 74, 62, 0.5) 100%);
+    }
+    
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -987,6 +1078,39 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero-title {
         font-size: 28px;
+    }
+    
+    /* Full Width Hero Mobile */
+    .hero.hero-fullwidth {
+        min-height: 100vh;
+    }
+    
+    .hero-fullwidth .hero-content {
+        padding: 40px 20px;
+        justify-content: center;
+    }
+    
+    .hero-fullwidth .hero-subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .hero-fullwidth .hero-title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    
+    .hero-fullwidth .hero-description {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    
+    .hero-fullwidth .btn-primary {
+        padding: 16px 35px;
+        font-size: 13px;
     }
     
     .products-grid {
