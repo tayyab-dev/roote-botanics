@@ -1080,39 +1080,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 28px;
     }
     
-    /* Full Width Hero Mobile */
-    .hero.hero-fullwidth {
-        min-height: 100vh;
-    }
-    
-    .hero-fullwidth .hero-content {
-        padding: 40px 20px;
-        justify-content: center;
-    }
-    
-    .hero-fullwidth .hero-subtitle {
-        font-size: 11px;
-        letter-spacing: 2px;
-        margin-bottom: 15px;
-    }
-    
-    .hero-fullwidth .hero-title {
-        font-size: 32px;
-        line-height: 1.2;
-        margin-bottom: 15px;
-    }
-    
-    .hero-fullwidth .hero-description {
-        font-size: 15px;
-        line-height: 1.6;
-        margin-bottom: 30px;
-    }
-    
-    .hero-fullwidth .btn-primary {
-        padding: 16px 35px;
-        font-size: 13px;
-    }
-    
     .products-grid {
         grid-template-columns: 1fr;
         max-width: 350px;
